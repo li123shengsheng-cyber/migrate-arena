@@ -1,0 +1,42 @@
+[
+    {
+        "argv": [],
+        "id": "basic",
+        "stdin": "alice,85\nbob,42\ncarol,60\n"
+    },
+    {
+        "argv": [
+            "--threshold",
+            "70"
+        ],
+        "id": "threshold-70",
+        "stdin": "alice,85\nbob,70\ncarol,69\n"
+    },
+    {
+        "argv": [],
+        "id": "invalid-score",
+        "stdin": "alice,85\nbob,abc\ncarol,50\n"
+    },
+    {
+        "argv": [],
+        "id": "empty-input",
+        "stdin": ""
+    },
+    {
+        "argv": [],
+        "id": "blank-lines",
+        "stdin": "\nalice,90\n\nbob,10\n\n"
+    },
+    {
+        "argv": [],
+        "id": "negative",
+        "stdin": "alice,-5\nbob,100\n"
+    },
+    {
+        "argv": [
+            "--nope"
+        ],
+        "id": "unknown-flag",
+        "stdin": ""
+    }
+]
